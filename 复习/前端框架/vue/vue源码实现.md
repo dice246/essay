@@ -18,6 +18,14 @@
 1. generate
 把第一部分生成的AST转化为渲染函数render function
 
+
+
+## 虚拟dom
+用javascript对象来描述dom结构，数据修改的时候，先修改vdom,然后做diff, 最后在汇总所有的diff.力求做最少的dom操作。
 													
 ## 更新
 数据的修改触发setter,然后监听器会通知进行修改，通过对比新旧vdom树，得到最小修改，就是patch，然后只需要把这些差异修改即可		
+
+
+
+
