@@ -35,3 +35,14 @@ class组件通常拥有 **状态和声明周期** ，继承于 **Component** �
 
 
 
+### 组件通信
+#### props传递
+父子组件通信
+#### context
+跨层级组件之间通信
+#### redux
+无明显关系的组件间通信
+
+
+## 生命周期
+![image.png](https://cdn.nlark.com/yuque/0/2020/png/89543/1599812921459-eae84d57-410b-4f34-a9dd-a26c85d9a562.png#align=left&display=inline&height=554&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1108&originWidth=2124&size=465877&status=done&style=none&width=1062)
