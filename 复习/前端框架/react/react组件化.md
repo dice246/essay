@@ -34,7 +34,8 @@ react-redux的<Provider/>就是通过Context提供一个全局的store
 
 
 # 高阶组件
-高阶组件是一个工厂函数，接收一个组件并返回另一个组件。
+为了满足复杂需求就要扩展功能单一的组件，所以就有高阶组件的概念。
+**高阶组件就是参数为组件，返回值为新组件的函数** 
 ```javascript
 const foo = Cmp => props => { 
   return <Cmp {...props} />
