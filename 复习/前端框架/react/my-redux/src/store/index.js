@@ -1,4 +1,5 @@
-import { createStore } from '../custom-redux'
+import { createStore, applyMiddleware } from '../custom-redux'
+import logger from "../middleware/logger";
 
 function reducer(state = 0, action) {
   switch (action.type) {
@@ -11,6 +12,6 @@ function reducer(state = 0, action) {
   }
 }
 
-const store = createStore(reducer);
+const store = createStore(reducer, applyMiddleware(logger));
 
 export default store;
