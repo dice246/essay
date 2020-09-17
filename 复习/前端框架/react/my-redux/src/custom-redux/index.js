@@ -21,6 +21,7 @@ export function createStore(reducer, enhancer) {
     return action
   }
 
+  // 初始化state
   dispatch({
     type: '@@CUSTOM-REDUX'
   })
