@@ -24,3 +24,20 @@ var reverseList = function (head) {
   }
   return prev
 };
+
+var reverseList = function(head) {
+  let prev = null;
+  let current = head;
+  while (current) {
+    [current.next, pre, current] = [pre, current, current.next]
+  }
+};
+
+var test = (head) => {
+  let prev = null;
+  let current = head;
+
+  while (current) {
+    [current.next, prev, current] = [prev, current, current.next]
+  }
+}
